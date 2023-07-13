@@ -1,3 +1,4 @@
 VENV.md
 .venv/
 __pycache__/
+.vscode/
