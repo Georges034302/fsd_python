@@ -17,3 +17,5 @@ while rain != -1:
     
 maximum = max(maximum,count)  
 print(f'Longest dry spell = {maximum}')
+
+# GitHub ID: Georges034302
