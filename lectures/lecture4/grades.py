@@ -18,3 +18,5 @@ else:
     grade = "Z"
     
 print(f'{name} mark is {mark} and grade is {grade}')
+
+# Georges034302
