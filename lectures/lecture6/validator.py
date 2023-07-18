@@ -1,5 +1,5 @@
 import patterns as p
-import re
+import re 
 
 class Validator:
     
@@ -13,4 +13,5 @@ class Validator:
     
     @staticmethod
     def validPassword(password):
-        return re.fullmatch(p.PASSWORD_PATTERN,password)     
+        return re.fullmatch(p.PASSWORD_PATTERN,password)
+    
