@@ -1,48 +1,31 @@
+# x = 2
+# print(x)
+# print(type(x))
+# x = True
+# print(x)
+# print(type(x))
+# x = "Hello"
+# print(x)
+# print(type(x))
 
 x = 2
 y = 3.5
 
-print(type(x))
-print(type(y))
+x +=1   # x = x + 1
+x -= y  # x = x - y
+x /=3   # x = x / 3
+x *= 2  # x = x * 2
+x %= 2  # x = x%2
 
-x = True
-y = "hello"
+print(f'{x**2:.3f}')
 
-print("x type is "+str(type(x)))
-print("y type is ",type(y))
-
-x = 4
-y = 3
-
-y += x # y = y + x
-print(y)
-
-y /=x # y = y/x
-print(y)
-
-y -= 2
-print(y)
-
-y += x
-print(y)
-
-print(x**2)
-print(pow(x,2))
-
-print(x%3)
-
-y = x + 3 * 4
-print(y)
-
-y= (x+3) * 4
-print(y)
-
-print(x == y)
-print(x is y)
-
-print(x != y)
-print(not(x == y))
 print(x is not y)
+print(not(x is y))
+print(not(x == y))
 
-b = (not(x) and y > x) or (x+3 > 4)
+b = (x >= y or not(x != y)) and (x is y or (x < y))
+
 print(b)
+
+# https://github.com/Georges034302
+# GitHub ID: Georges034302
