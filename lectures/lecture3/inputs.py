@@ -1,29 +1,16 @@
-import sys 
+import sys
 
-# reading input from STDIN
-# name = input("Name: ")
-# print(name)
+x = int(input("x =  "))
 
-# var0 = sys.argv[0]
-# var1 = sys.argv[1]
-# var2 = sys.argv[2]
-# var3 = sys.argv[3]
+y = int(input("y =  "))
 
-# print(var0)
-# print(var1)
-# print(var2)
-# print(var3)
+print("x + y = "+str(x + y))
 
-x = int(input("x = "))
-y = int(input("y = "))
 
-result = x*y
-print(result)
-print(type(result))
+a = float(sys.argv[1])
+b = float(sys.argv[2])
 
-x = int(sys.argv[1])
-y = float(sys.argv[2])
+print(a + b)
 
-result = x/y
-print(f'{result:.3f}')
-print(type(result))
+# GitHub: https://github.com/Georges034302
+# Georges034302
