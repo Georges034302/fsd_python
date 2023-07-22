@@ -2,7 +2,7 @@ import random as ran
 import pprint as pp
 
 def unique_ids(first,last,size):
-    return ran.sample(range(first,last),size)
+    return list(set(ran.sample(range(first,last),size)))
 
 def records(keys):
     names = {}
@@ -16,13 +16,11 @@ def create(names, key, value):
 def read(names,ID):
     return names[ID]       
 
-def update(names,key,value): 
+def update(names,key,value):
     names[key] = value
 
-def delete(names,key):   
+def delete(names,key):  
         del names[key]
         
 def view(names):
     pp.pprint(names,width=20)
-            
-

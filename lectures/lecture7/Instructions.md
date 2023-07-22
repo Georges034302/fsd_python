@@ -12,7 +12,7 @@ The person script is composed of the following steps:
 *   Define a function 'records' to create a dictionary of person:
     *   use the previous function to create random list of IDs of size 3-digits
     *   for each ID in the list read a person's name from STDIN
-    *   create an return a dictionary composed of (k,v) --> (ID,name) 
+    *   create an return a dictionary composed of (k,v) --> (ID,name)
 *   Define a function 'create' to add a person to the dictionary
 *   Define a function 'read' to find and return a person from dictionary
 *   Define a function 'update' to update a person's name by ID
