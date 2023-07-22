@@ -7,46 +7,37 @@ The Race Track program is composed of 3 scripts:
 
 the aim of this program is to improve the knowledge of OOP principles
 
-## The Car script:
-The Car script is composed of the following steps:
+## The car script:
+The car script includes the Car abstract class. The Car abstract class has:
 
-*   Define a function 'unique_ids' to generate a random list of: first, last, size
-    *   ensure that all IDs in the list are unique
-*   Define a function 'records' to create a dictionary of person:
-    *   use the previous function to create random list of IDs of size 3-digits
-    *   for each ID in the list read a person's name from STDIN
-    *   create an return a dictionary composed of (k,v) --> (ID,name)
-*   Define a function 'create' to add a person to the dictionary
-*   Define a function 'read' to find and return a person from dictionary
-*   Define a function 'update' to update a person's name by ID
-*   Define a function 'delete' to delete a person by ID
-*   Define a function 'view' to show the dictionary formatted as JSON
+*   constructor to initialize the car type
+*   abstract method move to add the distance moved to the car position
+*   abstract method position to return the car position
+*   method show to display *type+" position = "*
+*   method __str__ that returns the car type
    
-## The People script:
-The people script is composed of the following steps:
-*   Define a function 'exist' to check if a person exist in the dictionary
-*   Define a function 'records' to:
-    *   read in: first, last, size from STDIN
-    *   generate a list of IDs [3-digits]
-    *   return a dictionary of records (k,v) --> (ID, name)
-*   Define a function 'create' to add a new person if they don't exist
-    *   read ID and name from STDIN
-*   Define a function 'read' to retrieve a person's record if they exist
-    *   read ID from STDIN
-*   Define a function 'update' to update a record name by ID if they exist
-    *   read ID and name from STDIN
-*   Define a function 'delete' to delete a record by ID if they exist
-    *   read ID from STDIN
-*   Define a function to show all records as JSON
+## The cars script:
+The cars script has the BMW class and the Audi class that inherit Car
+*   the cars constructor should initialize the position
+*   the cars override the move method
+*   the cars override the position method
+*   the cars have the show method to show type and position
+
+## The cars script:
+The racetrack script has the RaceTrack class
+*   RaceTrack constructor initializes and empty list
+*   Define a procedure 'register' add 2 BMW and 2 Audi cars
+*   Define a procedure 'move' to move all cars
+*   Define a procedure 'show' to show all cars
+*   Define a function 'winner' to return the winning car (max position)
 *   Define the main system menu that offers the following choices:
-    -   c: create a record
-    -   r: read a record
-    -   u: update a record
-    -   d: delete a record
-    -   v: view a record
+    -   r: register cars
+    -   m: move cars
+    -   s: show cars
     -   x: exit
 
-# Georges034302 / fsd_python
+    * On exit the program should show the winning car and its position
+
 
 
 
