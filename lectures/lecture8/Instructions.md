@@ -1,11 +1,14 @@
-# People Registry with Python
+# Race Track with Python
 
-The people register program is composed of 2 scripts: person.py and people.py
+The Race Track program is composed of 3 scripts: 
+-   car.py 
+-   cars.py
+-   ractrack.py
 
-the aim of this program is to improve the knowledge of data structure (lists, dictionary) with Python.
+the aim of this program is to improve the knowledge of OOP principles
 
-## The Person script:
-The person script is composed of the following steps:
+## The Car script:
+The Car script is composed of the following steps:
 
 *   Define a function 'unique_ids' to generate a random list of: first, last, size
     *   ensure that all IDs in the list are unique
