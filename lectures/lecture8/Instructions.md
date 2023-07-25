@@ -23,9 +23,9 @@ The cars script has the BMW class and the Audi class that inherit Car
 *   the cars override the position method
 *   the cars have the show method to show type and position
 
-## The cars script:
+## The racetrack script:
 The racetrack script has the RaceTrack class
-*   RaceTrack constructor initializes and empty list
+*   RaceTrack constructor initializes an empty list
 *   Define a procedure 'register' add 2 BMW and 2 Audi cars
 *   Define a procedure 'move' to move all cars
 *   Define a procedure 'show' to show all cars
