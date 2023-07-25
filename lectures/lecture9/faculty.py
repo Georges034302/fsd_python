@@ -6,13 +6,13 @@ import student as s
 def filepath():
     scriptpath = os.path.abspath(sys.argv[0])
     scriptdir = os.path.dirname(scriptpath)
-    return scriptdir
+    return scriptdir+"\\"
     
 def read():
     path = filepath()
     file = input("Read CSV File: ")
-    s.read_from_csv(path+"\\"+file)
-    s.read_pandas(path+"\\"+file)
+    s.read_from_csv(path+file)
+    s.read_pandas(path+file)
     
 def write():
     path = filepath()
@@ -21,7 +21,7 @@ def write():
     mark = int(input("Mark: "))
     id = ran.randint(100000,999999)
     g = s.grade(mark)
-    s.write_to_csv(path+"\\"+file,id,name,mark,g)
+    s.write_to_csv(path+file,id,name,mark,g)
     
 def run():
     choice = input("Choice(r/w/x): ")
