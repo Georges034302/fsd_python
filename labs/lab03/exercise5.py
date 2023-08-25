@@ -1,0 +1,5 @@
+s = input("String: ")
+print('First character: '+s[0])
+print('Last character: '+s[len(s) - 1])
+print('Lowercase s: '+s.lower())
+print('String length: '+str(len(s)))
