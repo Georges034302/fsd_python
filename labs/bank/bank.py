@@ -7,6 +7,7 @@ import datetime
 class Bank:
     def __init__(self) -> None:
         self.admin = Manager()
+        db.initialize()
         self.customers = db.read()
          
     def customer(self,name):
